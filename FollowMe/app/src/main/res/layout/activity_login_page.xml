@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.followme.LoginPage">
+
+
+    <EditText
+        android:id="@+id/username"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:ems="10"
+        android:hint="उपयोगकर्ता का नाम दर्ज करें"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+        android:textColorHint="@color/pureblack"
+        android:textStyle="bold"  />
+
+    <EditText
+        android:id="@+id/password"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="पासवर्ड दर्ज करे"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView.PopupMenu"
+        android:textColorHint="@color/pureblack"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/continuelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="loginClick"
+        android:text="लॉग इन"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="पहले से ही एक उपयोगकर्ता है ???"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="कृपया लॉगिन करें"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

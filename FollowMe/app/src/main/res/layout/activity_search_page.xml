@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.example.followme.SearchPage">
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDiscoverable_on_off"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/pureblack"
+        android:text="चालू / बंद"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/pureblack"
+
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="डिवाइस खोजने योग्य बनाये"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="कृपया डिवाइस ब्लूटूथ पर स्विच करें !!!"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="35dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="सुनिश्चित करें कि डिवाइस खोजने योग्य है !!!"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

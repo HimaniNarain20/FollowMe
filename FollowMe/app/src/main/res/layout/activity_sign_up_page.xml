@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.example.followme.SignUpPage">
+
+    <TextView
+        android:id="@+id/enterusername"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continuesignup"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="198dp"
+        android:text="उपयोगकर्ता नाम"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
+
+    <TextView
+        android:id="@+id/enterpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enterusername"
+        android:layout_below="@+id/newusername"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="36dp"
+        android:text="पासवर्ड"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
+
+    <EditText
+        android:id="@+id/newusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterusername"
+        android:layout_alignBottom="@+id/enterusername"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:inputType="text|textEmailAddress|textPersonName" />
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/newusername"
+        android:layout_alignTop="@+id/enterpassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/continuesignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToHomePage"
+        android:text="साइन अप"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:fontFamily="casual"
+        android:text="नया खाता बनाएं!"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="नया उपयोगकर्ता???"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

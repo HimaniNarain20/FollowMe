@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.followme.ChoosePage">
+
+    <Button
+        android:id="@+id/pair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scan"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToPairPage"
+        android:text="जोड़े गए उपकरण"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToScanPage"
+        android:text="नए उपकरणों को स्कैन करें"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="आपका ब्लूटूथ चालू है और डिवाइस खोजने योग्य है !!!"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="आपके लिए पानी कौन ले जाएगा ???"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

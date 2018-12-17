@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.followme.SearchDevicesPage">
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stream"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToSearchPage"
+        android:text="इस्तेमाल करें"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/stream"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToStreamPage"
+        android:text="वर्तमान जीपीएस समन्वय प्राप्त करें" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/pureblack"
+        android:onClick="MoveToLogOutPage"
+        android:text="लोग आउट"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:fontFamily="casual"
+        android:text="कंसोल में आपका स्वागत है!"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="हम आपकी किस प्रकार मदद कर सकते हैं?"
+        android:textColor="@color/pureblack"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>

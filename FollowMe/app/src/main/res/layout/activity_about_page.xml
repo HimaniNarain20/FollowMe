@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+
+    tools:context="com.example.followme.AboutPage">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="The main structure of the robot comprises of the basic mechanical model in the form of a continuous tracked robot. The structure contains the entire technical set of components including the mechanical and electrical devices and used for the working of the robot.\n
+As per the software requirements of the project, it involves the entire controlling of the system via Arduino Uno Board. It controls, monitors and powers the robot looks after the functionality of the other components which include a GPS Module, Bluetooth Module and a compass.\n
+To make the robot user compatible, it comes with a user interface in the form of an android application which is behind the direction of the path to be followed by the robot. The ultimate user of the smartphone with the application installed in it uses the device and makes it move as it follows the user all though his/her way.\n\n
+1.	The user installs the android application into his smartphone (the application is a simple user interface which does not demand many extra-ordinary facilities and works on trivial ones like GPS and Bluetooth). Sign up/Login into the application.\n
+2.	As soon as the user starts streaming, the bluetooth permission pops up and allowing for that connects the smartphone to the robot’s bluetooth module.\n
+3.	The application streams the GPS coordinates and immediately transfers it to the arduino via the bluetooth. This happens in a loop in very short time intervals so that even the slightest change in the coordinates of the user is noticed.\n
+4.	The arduino, on the other hand, switches on its bluetooth module in the very beginning and waits for the user’s smartphone to get connected to it.\n
+5.	When the user starts the streaming (collecting the coordinates of the user via GPS), arduino also commands the GPS Module to function (along with the compass) and stream the robot’s own coordinates. This data gets fetched to the arduino itself.\n
+6.	Arduino also collects the data fetched to it by the android application via the bluetooth module in every regular short interval of time. It compares the two sets of data (the cooordinates of the user and that of the robot), analyses them and then commands the tracked robot to move accordingly.\n\n\n
+"
+                android:textColor="@color/pureblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pureblack"
+                android:text="Exit"
+
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:onClick="exit"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
